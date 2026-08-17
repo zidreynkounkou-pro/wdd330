@@ -14,5 +14,5 @@ export function renderHistory(history) {
     const favs = (getFromLocalStorage('favs') || []).map(String);
     const id = String(history.pageid || 'congo-history');
     const isSaved = favs.includes(id);
-    box.innerHTML = `<h3>History Summary</h3><p>${history.extract}</p><button class="favorite-btn ${isSaved?'saved':''}" data-id="${id}">${isSaved?'❤ Saved':'♡ Save'}</button>`;
+    box.innerHTML = `<h3>History Summary</h3><p>${history.extract}</p>`;
 }
