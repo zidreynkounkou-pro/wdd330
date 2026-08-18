@@ -1,6 +1,6 @@
 
 
-// Wikipedia and Rest Countres
+// Wikipedia and Rest Countries
  
 export async function getCountry() {
   const targetUrl = 'https://restcountries.com/v3.1/alpha/CG?fields=name,capital,population,flags,languages,currencies,region';

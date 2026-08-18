@@ -1,3 +1,5 @@
+import { getFromLocalStorage } from './storage.mjs';
+
 const events = [
   { id: 1, year: "1880", title: "Foundation of Brazzaville" },
   { id: 2, year: "1910", title: "Capital of French Equatorial Africa (AEF)" },
@@ -6,7 +8,7 @@ const events = [
   { id: 5, year: "1991", title: "National Sovereign Conference" },
   { id: 6, year: "1992", title: "New Constitution & Multi-party" }
 ];
-import { getFromLocalStorage } from './storage.mjs';
+
 export function renderTimeline() {
     const container = document.querySelector('.timeline-list');
     if (!container) return;
